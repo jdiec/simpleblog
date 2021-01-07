@@ -41,6 +41,8 @@ group :development do
 end
 group :production do
   gem 'pg'
+  gem 'redis', '>= 4.0', :require => ['redis', 'redis/connection/hiredis']
+  gem 'hiredis'
 end
 group :test do
   # Adds support for Capybara system testing and selenium driver
