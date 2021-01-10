@@ -44,6 +44,7 @@ group :production do
   gem 'redis', '>= 4.0', :require => ['redis', 'redis/connection/hiredis']
   gem 'hiredis'
   gem 'redis-rails'
+  gem "aws-sdk-s3"
 end
 group :test do
   # Adds support for Capybara system testing and selenium driver
