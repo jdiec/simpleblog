@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   resources :elements
   scope module: 'authors' do
+    get 'stats' => 'stats#index'
     resources :posts do
       resources :elements
     end
